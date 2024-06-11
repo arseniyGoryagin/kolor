@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">kolor</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="collected_button_text">Collected</string>
+    <string name="coins">Coins</string>
+    <string name="gems">Gems</string>
+</resources>

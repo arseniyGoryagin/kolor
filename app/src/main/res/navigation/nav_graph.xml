@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/game_nav_frag">
+
+    <fragment
+        android:id="@+id/shop_nav_frag"
+        android:label="Shop"
+        android:name="com.kolor.fragments.ShopFragment"
+        />
+
+    <fragment
+        android:id="@+id/game_nav_frag"
+        android:label="Kolor"
+        android:name="com.kolor.fragments.GameFragment"/>
+        <action
+            android:id="@+id/game_to_task_fragment"
+            app:destination="@id/tasks_nav_frag"/>
+        <action
+            android:id="@+id/game_to_settings_fragment"
+            app:destination="@id/settings_nav_frag"/>
+
+
+
+    <fragment
+        android:id="@+id/scores_nav_frag"
+        android:label="Scores"
+        android:name="com.kolor.fragments.ScoresFragment"
+        />
+
+
+    <fragment
+        android:id="@+id/social_nav_frag"
+        android:label="Social"
+        android:name="com.kolor.fragments.SocialFragment"
+        />
+
+
+    <fragment
+        android:id="@+id/settings_nav_frag"
+        android:label="Settings"
+        android:name="com.kolor.fragments.SettingsFragment"
+        />
+
+    <fragment
+        android:id="@+id/tasks_nav_frag"
+        android:label="Tasks"
+        android:name="com.kolor.fragments.TasksFragment"/>.
+        <action
+            android:id="@+id/tasks_to_game_fragment"
+            app:destination="@id/game_nav_frag"/>
+
+
+
+
+</navigation>

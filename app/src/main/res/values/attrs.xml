@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <declare-styleable name="GameView">
+        <attr name="clickColor" format="integer"/>
+        <attr name="isBoostedd" format="boolean"/>
+    </declare-styleable>
+<declare-styleable name="CircularProgress">
+    <attr name="progress" format="integer" />
+    <attr name="progressColor" format="color" />
+    <attr name="backgroundMainColor" format="color" />
+    <attr name="innerBackground" format="color" />
+    <attr name="isBoosted" format="boolean"/>
+</declare-styleable>
+</resources>

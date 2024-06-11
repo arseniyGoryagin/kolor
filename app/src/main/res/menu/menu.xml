@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:icon="@drawable/cog"
+        android:id="@+id/settings_nav_frag"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/shop_nav_frag"
+        android:title="Shop"
+        android:icon="@drawable/store_outline"
+        />
+
+    <item
+        android:icon="@drawable/play_outline"
+        android:id="@+id/game_nav_frag"
+        android:title="Play" />
+
+    <item
+        android:icon="@drawable/checkbox_marked_circle_auto_outline"
+        android:id="@+id/tasks_nav_frag"
+        android:title="Tasks" />
+
+
+    <item
+        android:icon="@drawable/face_man_profile"
+        android:id="@+id/social_nav_frag"
+        android:title="Social" />
+
+
+
+</menu>

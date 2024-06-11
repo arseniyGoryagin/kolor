@@ -1,0 +1,8 @@
+<!-- res/drawable/custom_tab_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/transparent" />
+    <corners android:radius="16dp" /> <!-- Adjust the radius to make it circular -->
+    <stroke
+        android:width="2dp"
+    android:color="@color/purple_click" /> <!-- Set your border color here -->
+</shape>

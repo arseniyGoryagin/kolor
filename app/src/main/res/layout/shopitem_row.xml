@@ -1,0 +1,219 @@
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:view="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="currency"
+            type="String"/>
+        <variable
+            name="textSize"
+            type="float"/>
+        <variable
+            name="isDefault"
+            type="Boolean"/>
+    </data>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+            <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/itemName"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                />
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:text="qty"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/itemQty"
+                app:layout_constraintStart_toEndOf="@id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                />
+
+
+
+            <include
+                android:id="@+id/itemPrice"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/itemQty"
+                app:layout_constraintEnd_toStartOf="@id/buyButton"
+                android:layout_marginStart="20dp"
+                layout="@layout/price_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:textSize="@{textSize}"
+                app:currency="@{currency}"
+                android:visibility="@{isDefault ? View.GONE : View.VISIBLE}"
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Buy"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </layout>
+
+
+
+<!--
+
+   <ImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:contentDescription="image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/gray_square"
+                />
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        ========
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+            <variable
+                name="shopEntity"
+                type="com.kolor.data.entities.ShopItemEntity" />
+    </data>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <ImageView
+
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="194dp"
+                android:src="@{shopEntity.imageId}"
+                android:scaleType="centerCrop"
+                android:contentDescription="image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+
+            <TextView
+                android:id="@+id/itemName"
+                app:layout_constraintStart_toEndOf="@id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@{shopEntity.itemName}"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                />
+
+            <TextView
+                android:id="@+id/itemQty"
+                app:layout_constraintStart_toEndOf="@id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@{String.valueOf(shopEntity.qty)}"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                />
+
+
+            <TextView
+                android:id="@+id/itemPrice"
+                app:layout_constraintStart_toEndOf="@id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@{String.valueOf(shopEntity.price)}"
+                android:textAppearance="?attr/textAppearanceTitleMedium"
+                />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:text="Buy"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/itemPrice"
+
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout> -->

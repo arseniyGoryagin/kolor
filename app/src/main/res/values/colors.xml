@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="unavailable">#dcdddd</color>
+    <color name="unavalable_grey">#808080</color>
+    <color name="light_pink">#FFC0CB</color> <!-- Light Pink -->
+    <color name="dark_gray">#808080</color> <!-- Dark Gray -->
+    <color name="dark_theme">#121212</color>
+    <color name="coin_light">#FFD700</color>
+    <color name="coin_dark">#B8860B</color>
+    <color name="background_game">#1E1E1E</color>
+    <color name="main_black">#1D1B20</color>
+    <color name="green">#4CAF50</color>
+
+    <!-- Click colors -->
+
+    <color name="purple_click">#B39DDB</color>
+    <color name="light_blue_click">#90CAF9</color>
+    <color name="red_click">#EF9A9A</color>
+    <color name="teal_click">#80CBC4</color>
+    <color name="green_click">#A5D6A7</color>
+    <color name="lime_click">#E6EE9C</color>
+    <color name="orange_click">#FFCC80</color>
+    <color name="pink_click">#F48FB1</color>
+    <color name="grey_click">#EEEEEE</color>
+
+    <!-- Wheel progress colors -->
+
+    <color name="gold_progress">#FFD700</color>
+    <color name="gem_progress">#64B5F6</color>
+   <color name="transparent">#00FFFFFF</color>
+
+    <!--
+    <color name="green">#4CAF50</color
+    <color name="green">#4CAF50</color>
+    <color name="green">#4CAF50</color> -->
+
+
+
+
+
+</resources>
